@@ -26,9 +26,9 @@ export default function CarModel() {
 
   return (
     <div className="absolute inset-0 z-20 overflow-hidden cursor-grab active:cursor-grabbing">
-      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 2, 8], fov: 45 }}>
+      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 2, 8], fov: 35 }}>
         <Suspense fallback={null}>
-          <Stage environment="city" intensity={0.8} adjustCamera={1.2}>
+          <Stage environment="city" intensity={0.8} adjustCamera={1.1}>
             <Model />
           </Stage>
         </Suspense>

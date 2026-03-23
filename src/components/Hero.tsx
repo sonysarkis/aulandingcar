@@ -65,14 +65,11 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="relative mt-5 flex h-[350px] w-full flex-1 items-center justify-center overflow-hidden rounded-[1.5rem] border bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_32%),linear-gradient(to_bottom_right,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] border-white/10">
+              <div className="relative mt-5 flex min-h-[450px] w-full flex-1 items-center justify-center overflow-hidden rounded-[1.5rem] border bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_32%),linear-gradient(to_bottom_right,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] border-white/10 md:min-h-[350px]">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:2.5rem_2.5rem] opacity-30"></div>
-                <div className="relative z-10 text-center pointer-events-none opacity-20 transition-opacity hover:opacity-100">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-3xl border border-white/10 bg-white/5">
-                    <Sparkles strokeWidth={1.5} className="h-8 w-8 text-lime-400" />
-                  </div>
-                  <p className="text-lg font-medium text-white">Modelo 3D Interactivo</p>
-                  <p className="mt-2 text-sm font-medium text-neutral-400">Puedes rotar el modelo con el cursor</p>
+                <div className="absolute top-6 z-30 w-full px-4 text-center pointer-events-none opacity-60 transition-opacity hover:opacity-100 md:top-8">
+                  <p className="text-xs font-semibold tracking-widest uppercase md:text-sm text-lime-400">Modelo 3D</p>
+                  <p className="mt-1 text-[10px] font-medium md:text-xs text-neutral-400">Arrastra para rotar el vehículo</p>
                 </div>
                 <CarModel />
               </div>
