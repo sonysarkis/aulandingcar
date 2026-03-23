@@ -9,9 +9,9 @@ export default function Inventory() {
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs font-medium border-white/10 bg-white/5 text-neutral-300">
             Inventario destacado
           </div>
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl text-white">Search your next car, ahora con una presencia más refinada.</h2>
+          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl text-white">Busca tu próximo auto, ahora con una presencia más refinada.</h2>
           <p className="mt-4 text-lg font-normal leading-8 text-neutral-300">
-            Una sección inspirada en la estructura de referencia, pero elevada con tarjetas más limpias, mejor respiración visual y una estética más tecnológica.
+            Encuentra el auto perfecto para ti con nuestra amplia selección de vehículos de calidad inspeccionados y listos para entrega inmediata. 
           </p>
         </div>
         <Link href="#" className="inline-flex items-center gap-2 rounded-full border px-5 py-3 text-sm font-medium transition border-white/10 bg-white/5 text-white hover:border-white/20 hover:bg-white/10">

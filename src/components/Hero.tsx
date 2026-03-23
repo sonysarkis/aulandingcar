@@ -1,5 +1,10 @@
+"use client";
+
 import { ArrowRight, ChevronRight, Sparkles, ShieldCheck, BadgeDollarSign } from "lucide-react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const CarModel = dynamic(() => import("./CarModel"), { ssr: false });
 
 export default function Hero() {
   return (
@@ -8,7 +13,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center lg:col-span-6 lg:pr-8">
           <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-2 text-xs font-medium backdrop-blur border-white/10 bg-white/5 text-neutral-300">
             <span className="h-2 w-2 rounded-full bg-lime-400"></span>
-            Compra, vende o encuentra tu próximo auto con una experiencia premium
+            Compra, vende o encuentra tu próximo auto con una experiencia premium.
           </div>
 
           <h1 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl text-white">
@@ -52,23 +57,24 @@ export default function Hero() {
             <div className="relative flex h-full flex-col rounded-[1.5rem] border p-5 border-white/10 bg-neutral-900/70">
               <div className="flex items-center justify-between border-b pb-4 border-white/10">
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">Área visual reservada</p>
-                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Espacio para vehículo animado</h2>
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">Experiencia Inmersiva</p>
+                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Descubre cada detalle</h2>
                 </div>
                 <div className="rounded-full border px-3 py-1 text-xs font-medium border-lime-400/20 bg-lime-400/10 text-lime-300">
-                  Hero visual
+                  Interactivo 360°
                 </div>
               </div>
 
-              <div className="relative mt-5 flex flex-1 items-center justify-center overflow-hidden rounded-[1.5rem] border border-dashed bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_32%),linear-gradient(to_bottom_right,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] border-white/10">
+              <div className="relative mt-5 flex h-[350px] w-full flex-1 items-center justify-center overflow-hidden rounded-[1.5rem] border bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_32%),linear-gradient(to_bottom_right,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] border-white/10">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:2.5rem_2.5rem] opacity-30"></div>
-                <div className="relative text-center">
+                <div className="relative z-10 text-center pointer-events-none opacity-20 transition-opacity hover:opacity-100">
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-3xl border border-white/10 bg-white/5">
                     <Sparkles strokeWidth={1.5} className="h-8 w-8 text-lime-400" />
                   </div>
-                  <p className="text-lg font-medium text-white">Inserta aquí tu render, video o animación 3D</p>
-                  <p className="mt-2 text-sm font-medium text-neutral-400">Diseñado para mantener una composición editorial premium</p>
+                  <p className="text-lg font-medium text-white">Modelo 3D Interactivo</p>
+                  <p className="mt-2 text-sm font-medium text-neutral-400">Puedes rotar el modelo con el cursor</p>
                 </div>
+                <CarModel />
               </div>
 
               <div className="mt-5 grid grid-cols-2 gap-4">

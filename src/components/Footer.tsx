@@ -5,16 +5,16 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-neutral-950">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <Link href="#" className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
                 <CarFront strokeWidth={1.5} className="h-5 w-5 text-lime-400" />
               </div>
               <div>
                 <div className="text-base font-semibold tracking-tight text-white">SUPER MOTORS</div>
-                <div className="text-xs font-medium text-neutral-400">No solo carros, experiencias</div>
+                <div className="text-xs font-medium text-neutral-400">No solo carros, experiencias.</div>
               </div>
             </Link>
             <p className="mt-4 text-sm leading-6 text-neutral-400">
@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-neutral-300">Navegación</h4>
             <ul className="mt-4 space-y-3 text-sm font-medium text-neutral-400">
               <li><Link href="#inventario" className="transition hover:text-white">Inventario</Link></li>
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-neutral-300">Servicios</h4>
             <ul className="mt-4 space-y-3 text-sm font-medium text-neutral-400">
               <li><Link href="#lead-form" className="transition hover:text-white">Comprar vehículo</Link></li>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
 
           {/* Contact / Social */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-neutral-300">Contacto</h4>
             <ul className="mt-4 space-y-3 text-sm font-medium text-neutral-400">
               <li>📍 Atlanta, Georgia</li>
