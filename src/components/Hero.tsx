@@ -16,7 +16,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg font-normal leading-8 text-neutral-300">
-            Diseñamos una experiencia automotriz más limpia, tecnológica y enfocada en conversión. Ideal para captar leads, mostrar inventario y escalar con una imagen de alto nivel.
+            Comprar un auto no tiene por qué ser un dolor de cabeza. En SUPER MOTORS hacemos que el proceso sea fácil, rápido y seguro. Te acompañamos en cada paso para que encuentres el vehículo perfecto para ti.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

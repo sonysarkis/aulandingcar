@@ -23,8 +23,9 @@ export default function Home() {
         <Inventory />
         <Benefits />
         <LeadForm />
-        <Footer />
       </main>
+
+      <Footer />
     </div>
   );
 }

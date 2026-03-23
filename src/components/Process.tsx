@@ -1,4 +1,4 @@
-import { Search, FileText, Zap } from "lucide-react";
+import { Search, ShieldCheck, Handshake } from "lucide-react";
 
 export default function Process() {
   return (
@@ -8,29 +8,29 @@ export default function Process() {
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl text-neutral-950 bg-lime-400">
             <Search strokeWidth={1.5} className="h-5 w-5" />
           </div>
-          <h3 className="mt-5 text-xl font-semibold text-white">Explora o solicita</h3>
+          <h3 className="mt-5 text-xl font-semibold text-white">Encuentra tu auto ideal</h3>
           <p className="mt-3 text-base font-normal leading-7 text-neutral-300">
-            Muestra tu inventario o permite que el usuario describa el vehículo que desea encontrar.
+            Explora nuestro inventario actualizado o cuéntanos exactamente qué vehículo buscas. Nosotros lo encontramos por ti.
           </p>
         </div>
 
         <div className="rounded-[1.75rem] border p-6 backdrop-blur border-white/10 bg-white/5">
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl text-neutral-950 bg-lime-400">
-            <FileText strokeWidth={1.5} className="h-5 w-5" />
+            <ShieldCheck strokeWidth={1.5} className="h-5 w-5" />
           </div>
-          <h3 className="mt-5 text-xl font-semibold text-white">Captura de lead optimizada</h3>
+          <h3 className="mt-5 text-xl font-semibold text-white">Inspección y garantía</h3>
           <p className="mt-3 text-base font-normal leading-7 text-neutral-300">
-            Formulario claro, visual y preparado para integrarse después con tu flujo comercial.
+            Cada vehículo pasa por una inspección rigurosa de más de 150 puntos. Comprá con la tranquilidad que mereces.
           </p>
         </div>
 
         <div className="rounded-[1.75rem] border p-6 backdrop-blur border-white/10 bg-white/5">
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl text-neutral-950 bg-lime-400">
-            <Zap strokeWidth={1.5} className="h-5 w-5" />
+            <Handshake strokeWidth={1.5} className="h-5 w-5" />
           </div>
-          <h3 className="mt-5 text-xl font-semibold text-white">Conversión más rápida</h3>
+          <h3 className="mt-5 text-xl font-semibold text-white">Financiamiento flexible</h3>
           <p className="mt-3 text-base font-normal leading-7 text-neutral-300">
-            Jerarquía visual moderna, llamadas a la acción visibles y una experiencia que inspira valor.
+            Trabajamos con múltiples opciones de financiamiento para que tu próximo auto se adapte a tu presupuesto, sin sorpresas.
           </p>
         </div>
       </div>
